@@ -13,7 +13,8 @@ This is a backend E commerce using MYSQL and sequilize\
 3. [Usage](#usage)
 4. [License](#license)
 5. [Test](#test)
-6. [Questions](#questions)
+6. [Demo](#demo)
+7. [Questions](#questions)
 
 ## Usage:
 
@@ -27,6 +28,10 @@ ISC
 
 npm run seed
 npm start
+
+## Demo:
+
+Link to Demo : https://youtu.be/T2jZSHN8IvQ
 
 ## Questions:
 
