@@ -1,101 +1,35 @@
 # E-Commerce-Back-End
 
-## Category
+[![License](https://img.shields.io/badge/License-ISC-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
 
-### id
+## Description:
 
-Integer
+This is a backend E commerce using MYSQL and sequilize\
 
-Doesn't allow null values
+## Table of Contents
 
-Set as primary key
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [License](#license)
+5. [Test](#test)
+6. [Questions](#questions)
 
-Uses auto increment
+## Usage:
 
-### category_name
+you start up the command line and start npm I for install then comfirm database in loaded. At this point you will seed your data and then run your server.
 
-String
+## License:
 
-Doesn't allow null values
+ISC
 
-## Product
+## Test:
 
-### id
+npm run seed
+npm start
 
-Integer
+## Questions:
 
-Doesn't allow null values
+-Github: [zwhumphrey](https://github.com/zwhumphrey)
 
-Set as primary key
-
-Uses auto increment
-
-### product_name
-
-String
-
-Doesn't allow null values
-
-### price
-
-Decimal
-
-Doesn't allow null values
-
-Validates that the value is a decimal
-
-### stock
-
-Integer
-
-Doesn't allow null values
-
-Set a default value of 10
-
-Validates that the value is numeric
-
-### category_id
-
-Integer
-
-References the category model's id
-
-## Tag
-
-### id
-
-Integer
-
-Doesn't allow null values
-
-Set as primary key
-
-Uses auto increment
-
-### tag_name
-
-String
-
-## ProductTag
-
-### id
-
-Integer
-
-Doesn't allow null values
-
-Set as primary key
-
-Uses auto increment
-
-### product_id
-
-Integer
-
-References the product model's id
-
-### tag_id
-
-Integer
-
-References the tag model's id
+-Email: [zwhumphrey@icloud.com](mailto:zwhumphrey@icloud.com)
