@@ -1,5 +1,5 @@
 const express = require('express');
-const routes = require('../E-Commerce-Back-End/routes');
+const routes = require('../fantastic-umbrella/routes');
 // import sequelize connection
 const sequelize = require('./config/connection');
 
