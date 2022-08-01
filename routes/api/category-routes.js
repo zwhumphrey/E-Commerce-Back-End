@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
       },
     ],
   })
-    .then((categoryInfo) => res.jsom(categoryInfo))
+    .then((dbCategoryData) => res.jsom(dbCategoryData))
     .catch((err) => {
       console.log(err);
       res.status(500).json(err);
@@ -37,12 +37,12 @@ router.get('/:id', (req, res) => {
       },
     ],
   })
-    .then((categoryInfo) => {
-      if (!categoryInfo) {
+    .then((dbCategoryData) => {
+      if (!dbCategoryData) {
         res.status(404).json({ message: 'Catagory not found by id' });
         return;
       }
-      res.json(categoryInfo);
+      res.json(dbCategoryData);
     })
     .catch((err) => {
       console.log(err);
@@ -55,7 +55,7 @@ router.post('/', (req, res) => {
   Category.create({
     category_name: req.body.category_name,
   })
-    .then((categoryInfo) => res.json(categoryInfo))
+    .then((dbCategoryData) => res.json(dbCategoryData))
     .catch((err) => {
       console.log(err);
       res.status(500).json(err);
@@ -69,12 +69,12 @@ router.put('/:id', (req, res) => {
       id: req.params.id,
     },
   })
-    .then((categoryInfo) => {
-      if (!categoryInfo[0]) {
+    .then((dbCategoryData) => {
+      if (!dbCategoryData[0]) {
         res.status(404).json({ message: 'Catagory not found by id' });
         return;
       }
-      res.json(categoryInfo);
+      res.json(dbCategoryData);
     })
     .catch((err) => {
       console.log(err);
@@ -89,12 +89,12 @@ router.delete('/:id', (req, res) => {
       id: req.params.id,
     },
   })
-    .then((categoryInfo) => {
-      if (!categoryInfo) {
+    .then((dbCategoryData) => {
+      if (!dbCategoryData) {
         res.status(404).json({ message: 'Catagory not found by id' });
         return;
       }
-      res.json(categoryInfo);
+      res.json(dbCategoryData);
     })
     .catch((err) => {
       console.log(err);
